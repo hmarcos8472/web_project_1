@@ -17,6 +17,8 @@ body {margin: 0}
     /* parameters for the header section */
     background-color: #F2F2F2;
     display: flex;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 .logo_place_header {
@@ -29,12 +31,43 @@ body {margin: 0}
   font-size: 102px;
   line-height: 96px;
   width: 730px;
+  margin-left: 64px;
+}
+
+.header__subtitle {
+  width: 388px;
+  margin-left: 64px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 55px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2F80ED;
+  margin-left: 64px;
+  margin-top: 0;
+  position: absolute;
+  bottom: 30px;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
     height: 568px;
     width: 568px;
+    background-color: #2F80ED;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    z-index: 0;
+}
+
+.header__main-illustration {
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }
 
 /* including elements with key-value modifiers */
