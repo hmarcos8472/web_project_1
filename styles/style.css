@@ -1,6 +1,7 @@
 .body {
   margin: 0;
 }
+
 .page {
     min-width: 1100px;
     /* we don't know how to make mobile versions of websites yet, */
@@ -12,6 +13,7 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Header */
 .header {
     height: 100vh;
     min-height: 600px;
@@ -25,11 +27,7 @@
     overflow: hidden;
 }
 
-.header__left {
-  margin-left: 64px;
-}
-
-.header__logo_top {
+.logo_place_header {
   width: 154px;
   height: 31px;
   margin-top: 30px;
@@ -133,43 +131,35 @@
   line-height: 34px;
   width: 60%;
   text-align: center;
-  margin: 0 auto 60px;
+  margin: 0 auto;
 }
 
 .table {
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   list-style: none;
 }
 
-.table__cell {
-  padding: 5px;
-  z-index: 2;
+.table__cell_theme_light {
+  width: 250px;
+  margin-top: 60px;
 }
 
-.table__heading {
+.table__heading_theme_light {
   font-size: 24px;
   line-height: 1.15;
+  font-weight: bold;
 }
 
-.table__text {
+.table__text_theme_light {
   font-size: 18px;
   line-height: 1.2;
-  margin: 20px 0px;
 }
 
-.table__cell .table_theme_light {
-  width: 250px;
-}
-
-/*.table__text .table_theme_light{
-  font-size: 18px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}*/
-
+/* Feynman */
 
 .feynman {
   height: 890px;
@@ -215,6 +205,8 @@
   color: black;
 }
 
+/* Kaufman */
+
 .kaufman {
   position: relative;
   z-index: 1;
@@ -226,7 +218,7 @@
 
 .kaufman__triangle {
   position: absolute;
-  right: -475px;
+  right: -450px;
   z-index: 1;
   transform: rotateY(180deg);
 }
@@ -245,15 +237,30 @@
   font-size: 24px;
   line-height: 34px;
   width: 60%;
-  margin: 0 auto 80px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.table__cell .table_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 2;
   color: white;
 }
 
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+/* Footer */
 
 .footer {
   position: relative;
@@ -283,6 +290,10 @@
 .footer__column_content_copyright {
   justify-content: space-between;
   list-style: none;
+}
+
+.logo_place_footer {
+  background-size: contain;
 }
 
 .footer__author {
@@ -318,12 +329,4 @@
   line-height: 30px;
   margin: 0;
   padding: 0;
-}
-
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
 }
