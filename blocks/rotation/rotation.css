@@ -1,0 +1,17 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(-15deg);
+  }
+  25% {
+    transform: rotate(-105deg);
+  }
+  50% {
+    transform: rotate(-195deg);
+  }
+  75% {
+    transform: rotate(-285deg);
+  }
+  100% {
+    transform: rotate(-375deg);
+  }
+}
