@@ -1,5 +1,5 @@
 .footer__column_content_copyright {
   justify-content: space-between;
   list-style: none;
-  width: 50%;
+  flex-basis: 711px;
 }

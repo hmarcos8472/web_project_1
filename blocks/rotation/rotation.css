@@ -15,3 +15,7 @@
     transform: rotate(-375deg);
   }
 }
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}

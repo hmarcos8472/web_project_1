@@ -2,6 +2,6 @@
   margin-right: 20px;
 }
 
-.video__iframe:last-child {
+.video__iframe:nth-child(2n) {
   margin-right: 0;
 }

@@ -1,13 +1,13 @@
-.footer__social-link {
-  color: white;
-  text-decoration: none;
+.footer__column-link {
   font-size: 18px;
   line-height: 30px;
   margin: 0;
   padding: 0;
+  color: #F2F2F2;
+  text-decoration: none;
   transition: opacity 2s;
 }
 
-.footer__social-link:hover {
+.footer__column-link:hover {
   opacity: 60%;
 }
